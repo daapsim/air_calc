@@ -1,0 +1,205 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F8A68B43-5856-4B09-979B-705C78A1AD7F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>APH_e_PV</RootNamespace>
+    <AssemblyName>APH e PV</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Users\HELIO\Desktop\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>2</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>9588E4EBEA3C271536FAC548893D91375D1ED67C</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>APH e PV_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>wind.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Dimensionamento_Linha.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dimensionamento_Linha.Designer.cs">
+      <DependentUpon>Dimensionamento_Linha.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cálculos_Vazão.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cálculos_Vazão.Designer.cs">
+      <DependentUpon>Cálculos_Vazão.cs</DependentUpon>
+    </Compile>
+    <Compile Include="feedbackemail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="feedbackemail.Designer.cs">
+      <DependentUpon>feedbackemail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface_inicial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface_inicial.Designer.cs">
+      <DependentUpon>Interface_inicial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LeisTransformacao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LeisTransformacao.Designer.cs">
+      <DependentUpon>LeisTransformacao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Singularidades.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Singularidades.Designer.cs">
+      <DependentUpon>Singularidades.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sobre.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sobre.Designer.cs">
+      <DependentUpon>Sobre.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tabela1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tabela1.Designer.cs">
+      <DependentUpon>tabela1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tabela2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tabela2.Designer.cs">
+      <DependentUpon>tabela2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Toolbox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <EmbeddedResource Include="Cálculos_Vazão.resx">
+      <DependentUpon>Cálculos_Vazão.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dimensionamento_Linha.resx">
+      <DependentUpon>Dimensionamento_Linha.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="feedbackemail.resx">
+      <DependentUpon>feedbackemail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface_inicial.resx">
+      <DependentUpon>Interface_inicial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LeisTransformacao.resx">
+      <DependentUpon>LeisTransformacao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Singularidades.resx">
+      <DependentUpon>Singularidades.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sobre.resx">
+      <DependentUpon>Sobre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tabela1.resx">
+      <DependentUpon>tabela1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tabela2.resx">
+      <DependentUpon>tabela2.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="APH e PV_TemporaryKey.pfx" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 e x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="wind.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
